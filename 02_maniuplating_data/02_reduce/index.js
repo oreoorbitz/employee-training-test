@@ -13,5 +13,6 @@ const product = (arr) => arr.map(card => card.querySelector('[data-component-pri
 const updateTotalBtn = document.querySelector('[data-component-update]')
 updateTotalBtn.addEventListener('click', (event) => {
   const cartTotal = product(cardsArr).reduce((sum, product) => sum + product)
-  
+  let total = document.querySelector('[data-component-total]')
+  total.innerText = cartTotal
 })
