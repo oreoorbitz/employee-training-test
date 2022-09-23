@@ -5,5 +5,6 @@
 
 // add a click event listener for the get "Update total" button
 // use the function you made above to take all the product cards output the total for each product.
+// use the filter function to e the gift product from your product array
 // use the reduce function to iterate through the array of product totals, and sum all these into a cart total
 // inject the cart total as the innerText of the data-component-total element
