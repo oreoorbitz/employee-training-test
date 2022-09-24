@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>List of things!</h1>
-  <li data-component-list-item  >
-    <span data-component-title >Name goes here:</span>
-    <span data-component-price >Price per unit</span>
-  </li>
-  
-  <script type="module" src="index.js" ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>List of things!</h1>
+    <input id="check" type="checkbox">
+    <label for="check">Have you read our imaginary terms of service?</label>
+    <br>
+    <p></p>
+    <button>
+      display List!
+    </button>
+    <br>
+    <p></p>
+    <alert style="color: red; display: none;" >
+      You must check that you've accept the terms of service before displaying our list!
+    </alert>
+    <ul data-component-list style="display: none;" > 
+      <li data-component-list-item>
+        <div >
+          <span data-component-title>1 bundle:</span>
+          <span data-component-price-text>Price per unit</span>
+          <span data-component-price >$50</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <span data-component-title>5 bundles:</span>
+          <span data-component-price-text>Price per unit</span>
+          <span data-component-price >$125</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <span data-component-title>12 bundles:</span>
+          <span data-component-price-text>Price per unit</span>
+          <span data-component-price>$120</span>
+          <span  style="color: red;font-size: 12px; display: none;" >  Buy now limited supply</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <span data-component-title>one sample:</span>
+          <span data-component-price-text>Price per unit</span>
+          <span data-component-price >$10</span>
+        </div>
+      </li>
+    </ul>
 
-</body>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
