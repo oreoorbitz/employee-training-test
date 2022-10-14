@@ -1,0 +1,29 @@
+So in javascript, we can query existing DOM elements, and edit those, or create new ones an edit those.
+Is it better to edit existing HTML, or create new HTML, 
+is actually a point of huge debate in the development community
+The creation of react, which creates a website components in javascript, and then the creation of next.js, 
+which uses javascript to create HTML locally on the server side, which some critics of HTML by JS call re-inventing the wheel
+
+What are the benefits and reasons to creating HTML in js, as opposed to edit existing HTML created by server?
+
+One of the biggest motivation to using JS to create HTML would simply be, avoiding redundancy.
+If you will be using JS to edit every single aspect of a HTML element, 
+then what is the point of using server side HTML in the first place.
+
+Take the example of a side cart in a e-commerce website, side carts being one the most interactive elements 
+you will find in an E-commerce website. A side cart is essentially a CRUD app.
+
+It displays everything in the cart, you can remove items in the cart, you can update values of items in the cart, and delete value of items in the cart, 
+using the values from an api request.
+If you will be using javascript to create new product cards in a Javascript anyways, what's the point of creating the product cards in HTML first?
+
+Another valid reason for creating HTML in Javascript is related to the functional school of programming.
+The functional school prefers to have as little mutations of state as possible. Take the example of the of the side cart,
+where you are editing multiple elements at once in response to a user action (adding a product to cart)
+It would be very easy to cause multiple mutations by using 3 functions.
+So how would you make 3 these changes with the least amount of mutation?
+One method would be to create a copy of the parent of these elements, using functional principles, then replace the original with the copy, 
+thus only modifying the state ( the real website ) once.
+
+in this module, you will be creating html using a template.
+You will take string, and convert it to real HTML
