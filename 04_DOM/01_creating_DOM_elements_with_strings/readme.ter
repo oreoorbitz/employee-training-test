@@ -26,4 +26,11 @@ One method would be to create a copy of the parent of these elements, using func
 thus only modifying the state ( the real website ) once.
 
 in this module, you will be creating html using a template.
-You will take string, and convert it to real HTML
+You will take string, and convert it to a real DOM element to place into the page
+
+1. Create a DOM element using the string in the template variable, you can use the built in Javascript Class, DOMParser
+
+2. When creating this new DOM element, replace the {{title}} in the string, with the value of the title variable, if google doesn't supply regex to replace {{title}}, 
+you can change the formatting to something you could find on google, like [title], or (title)
+
+3. Append this newly created element into the page
