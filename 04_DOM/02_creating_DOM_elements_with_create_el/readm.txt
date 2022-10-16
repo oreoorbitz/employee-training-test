@@ -1,0 +1,14 @@
+Is this module, you'll taken product data from an imaginary product API, and rendering out product cards on the page.
+You have used the create element method before, the key concepts in this module will the cloneNode method, and event delegation
+
+1. create an <article> for each product object in the imaginary API
+2. inside of the article tag, put a h1 tag, using the value from the "title" key of the product object
+3. inside of the article tag, put an img tag, using the value from the "featured_image" key of the product object
+4. inside of the article tag, create an button tag, with the text of add to cart, give it a data-attribute of "product-id" and in that attribute, 
+put the value from the product object's "product_id" key
+5. Append these newly created elements into the page, in the div with a class of row
+6. When a user clicks on the button in the article tags, an alert should appear with the text" product ${product_id} has been added to cart!"
+
+Concepts or documentation you will likely need to look into:
+Event delegation, or the javascript event delegation pattern
+cloneNode method
