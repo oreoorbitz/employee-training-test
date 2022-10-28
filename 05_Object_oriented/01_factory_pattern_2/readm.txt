@@ -1,0 +1,36 @@
+You do not have to use functions exelusivly to create a factory, you can use es6 classes, 
+instor objects created using the pseudo classical pattern, 
+the key concept is that the result is not an instance object like in the pseudo classical pattern or es6 classes, 
+but an object.
+
+you will be recreating the factory in your previous module, but using es6 classes
+
+create a class called Header
+it will just have a constructor, that will take in an options object.
+assign headerLevel, and headerText from the options object, into the class instance 
+like:
+this.headerLevel = options.headerLevel
+
+create a class called Image, make similar to header class, but with variable naming adjusted an image element, 
+see previous task for variables used.
+
+create a class called Button, same pattern as above
+
+create a class called elementFactory
+
+in the constructor, the take in a single parameter, tag.
+
+the object will have a function called create 
+this function will a new dom element, it will take in an options parameter
+
+create a new instance of a class, the variable will be called elementOptions, if the tag arguement passed is "button", 
+call the Button class, and assign it to the tag variable, same pattern for Header or Image
+
+then, create a new DOM element, and apply the values from elementOptions, depending on the tag type, 
+innerText for button, alt and src for image, ectera
+
+return that newly created Dom element
+
+in the returned object, from the factory, include a function called appendTo, t
+his functiol will take in a single parameter, a target to append to.
+in the append function, call the create function of the same object, and append the result of create into the target element.
